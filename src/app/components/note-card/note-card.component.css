@@ -1,0 +1,29 @@
+.note {
+  cursor: pointer;
+  padding: 15px;
+  border: 1px solid #fbff13;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  position: relative;
+  background: #ffffff;
+  transition: box-shadow 0.3s ease-in-out;
+  width: 100%;
+}
+.note:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.note h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.note p {
+  margin: 10px 0 0;
+  font-size: 14px;
+}
+
+.selected {
+  border-left: 4px solid blue;
+}

@@ -1,0 +1,7 @@
+<div class="notes-display" *ngIf="notes.length !== 0">
+  <app-note-card *ngFor="let note of notes; let i = index" [note]="note" (edit)="onEdit(note)" (remove)="onRemove(i)"></app-note-card>
+</div>
+
+<div class="notes-display" *ngIf="notes.length === 0">
+  <h2>No notes stored!</h2>
+</div>

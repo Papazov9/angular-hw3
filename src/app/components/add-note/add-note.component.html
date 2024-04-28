@@ -1,0 +1,17 @@
+<div class="form-container">
+<form [formGroup]="notesForm" (ngSubmit)="saveNote()">
+  <div class="note-inputs">
+      <label for="title">Title</label>
+      <input id="title" type="text" formControlName="title" placeholder="Enter note title">
+      <div class="error" *ngIf="notesForm.controls['title'].errors?.['minlength'] || notesForm.controls['title'].errors?.['required']">
+        Username must be at least 5 symbols.
+      </div>
+      <label for="description">Description</label>
+      <textarea id="description" formControlName="description" placeholder="Enter note description"></textarea>
+      <div class="error" *ngIf="notesForm.controls['description'].errors?.['minlength'] || notesForm.controls['description'].errors?.['required']">
+        Username must be at least 7 symbols.
+      </div>
+      <button type="submit" [disabled]="!notesForm.valid">Save Note</button>
+  </div>
+</form>
+</div>

@@ -1,0 +1,27 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.vertical-line {
+  height: 100px;
+  width: 1px;
+  background-color: #000;
+  margin: 0 20px;
+}

@@ -1,0 +1,9 @@
+<div class="note" [ngClass]="{'selected': isSelected}" (click)="toggleSelection()">
+  <h3>{{ note.title }}</h3>
+  <p>{{ note.description }}</p>
+
+  <div class="note-actions" *ngIf="isSelected">
+    <button (click)="editNote(); $event.stopPropagation()">Edit</button>
+    <button (click)="removeNote(); $event.stopPropagation()">Remove</button>
+  </div>
+</div>
